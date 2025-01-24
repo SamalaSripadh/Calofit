@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALOFIT - Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <script src="report.js" defer></script>
+</head>
+<style>
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    height: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(252, 101, 13, 0.075);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff5a0e;
+    font-size: 38px;
+}
+
+.report-container {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.report-container p {
+    font-weight: bold;
+}
+
+.success-text {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.warning-text {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.error-text {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+</style>
+<body>
+  <div class="container">
+    <h1>CALOFIT - Detailed Report</h1>
+    <div class="report-container" id="reportContainer"></div>
+  </div>
+</body>
+</html>

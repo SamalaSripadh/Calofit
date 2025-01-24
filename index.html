@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALOFIT</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>CALOFIT</h1>
+    <h2>- Macronutrient Calculator -</h2>
+    
+    <form id="inputForm">
+      <label for="weight">Weight (in kilograms):</label>
+      <input type="number" id="weight" name="weight" required>
+      
+      <label for="height">Height (in centimeters):</label>
+      <input type="number" id="height" name="height" required>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option disabled selected hidden></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+      <label for="activityLevel">Activity Level:</label>
+      <select id="activityLevel" name="activityLevel" required>
+        <option disabled selected hidden></option>
+        <option value="sedentary">Sedentary</option>
+        <option value="lightlyActive">Lightly Active</option>
+        <option value="moderatelyActive">Moderately Active</option>
+        <option value="veryActive">Very Active</option>
+        <option value="extraActive">Extra Active</option>
+      </select>
+      
+      <label for="fitnessGoal">Fitness Goal:</label>
+      <select id="fitnessGoal" name="fitnessGoal" required>
+        <option disabled selected hidden></option>
+        <option value="weightLoss">Weight Loss</option>
+        <option value="muscleGain">Muscle Gain</option>
+      </select>
+      
+      <button type="submit">Calculate</button>
+    </form>
+    <a href="report/report.html"></a>
+
+    <div id="resultDisplay"></div>
+  </div>
+</body>
+</html>
